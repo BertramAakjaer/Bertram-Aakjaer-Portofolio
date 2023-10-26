@@ -1,0 +1,115 @@
+/* General for the whole document */
+
+* {
+  box-sizing: border-box;
+
+  /* border: 1px red dotted; */
+}
+
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+}
+
+/* Animation pop up */
+
+.div-cormorant-holder {
+  width: 80%;
+  height: 45vw;
+  margin-inline: auto;
+  margin-bottom: 3vw;
+}
+
+.image-holder {
+  position: relative;
+  width: 100%;
+  height: 80%;
+  top: 10%;
+}
+
+.cormorant-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.background-components-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.image-ellipseBackground {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
+
+.image-ellipseFloor {
+  position: absolute;
+  width: 75%;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -15%);
+}
+
+.image-pyramids {
+  position: absolute;
+  width: 70%;
+  left: 50%;
+  transform: translate(-50%, -78%);
+  z-index: 2;
+}
+
+.image-cormorant {
+  position: absolute;
+  width: 70%;
+  top: 52%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+}
+
+/* Small birds in pop up animation */
+
+.sm-bi-1 {
+  position: absolute;
+  width: 6%;
+  left: 72%;
+  top: -59%;
+  z-index: 2;
+}
+
+.sm-bi-2 {
+  position: relative;
+  width: 14%;
+  left: 38.5%;
+  top: -25%;
+  z-index: 2;
+}
+
+.sm-bi-3 {
+  position: absolute;
+  width: 12%;
+  left: 29%;
+  top: -92%;
+  z-index: 2;
+}
+
+/* Header and breadcrumb css */
+
+/* hero stuff for the site */
+
+.hero {
+  height: 3000px;
+  width: 100%;
+}

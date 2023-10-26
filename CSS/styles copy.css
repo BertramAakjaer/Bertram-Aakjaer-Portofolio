@@ -1,0 +1,71 @@
+/* General for the whole document */
+
+* {
+  box-sizing: border-box;
+  position: relative;
+  border: 1px red dotted;
+}
+
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+.div-background {
+  position: relative;
+  margin-inline: auto;
+  height: 4000px;
+  width: 100%;
+
+  background: #f6f6f6;
+  background: -moz-linear-gradient(top, #fbfcff 0%, #d0ccd0 100%);
+  background: -webkit-linear-gradient(top, #fbfcff 0%, #d0ccd0 100%);
+  background: linear-gradient(to bottom, #fbfcff 0%, #d0ccd0 100%);
+}
+
+/* Header and breadcrumb css */
+
+.header-container {
+  background-color: white;
+  position: sticky;
+  top: 0px;
+  height: 60px;
+  width: 100%;
+}
+
+nav.header-flex {
+  width: 95%;
+  height: 80%;
+  margin-inline: auto;
+  margin-top: 5px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.display-name {
+  width: auto;
+}
+
+nav.navigation_sektion {
+  height: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: left;
+}
+
+/* hero stuff for the site */
+
+.hero {
+  width: 100%;
+}
