@@ -20,146 +20,159 @@
     <link rel="stylesheet" href="CSS/styles.css" />
 
     <!-- Titel -->
-    <title>Bertram Aakjær - Forside</title>
+    <title>Bertram Aakjær | Portofolie</title>
     <link rel="icon" href="Photos/browserLogo/logo.jpg" />
   </head>
 
   <!-- Body -->
   <body>
     <div class="container-fluid">
-      <div class="hero">
+      <div
+        class="hero"
+        data-bs-spy="scroll"
+        data-bs-target="#mainNav"
+        tabindex="0"
+      >
         <!-- Logo pop up section -->
-        <div class="container w-75 min-vh-100">
+        <div class="container w-75 min-vh-100" id="Home">
           <div
             class="float-start d-flex justify-content-center align-content-center container"
           >
-            <img
-              src="Photos/PopUpAnimation/Background Ellipse.png"
-              alt="Ellipse"
-              class="position-absolute translate-middle"
+            <div
+              class="position-absolute translate-middle image-ellipseBackground"
               style="top: 45%; left: 50%"
-            />
-            <img
-              src="Photos/PopUpAnimation/Bottom Ellipse.png"
-              alt="Ellipse Bottom"
-              class="position-absolute translate-middle"
-              style="top: 85%; left: 50%"
-            />
-            <div
-              data-aos="zoom-out-up"
-              data-aos-delay="350"
-              data-aos-duration="350"
-              class="position-absolute translate-middle"
-              style="top: 45%; left: 45%"
             >
               <img
-                src="Photos/PopUpAnimation/Cormorant.png"
-                alt="Cormorant"
-                class=""
+                src="Photos/PopUpAnimation/Background Ellipse.png"
+                alt="Ellipse"
+                class="picFit"
               />
-            </div>
-            <div
-              data-aos="zoom-in"
-              class="position-absolute translate-middle"
-              style="top: 75%; left: 50%"
-              data-aos-duration="350"
-            >
-              <img
-                src="Photos/PopUpAnimation/Pyramids.png"
-                alt="Pyramids"
-                class=""
-              />
-            </div>
-            <div
-              class="position-absolute translate-middle"
-              style="top: 40%; left: 70%"
-              data-aos="zoom-out-left"
-              data-aos-delay="750"
-              data-aos-duration="600"
-            >
-              <img
-                src="Photos/PopUpAnimation/SmallBirds1.png"
-                alt="SmallBirds1"
-                class=""
-              />
-            </div>
-            <div
-              class="position-absolute translate-middle"
-              style="top: 66%; left: 45%"
-              data-aos="zoom-out-down"
-              data-aos-delay="750"
-              data-aos-duration="600"
-            >
-              <img
-                src="Photos/PopUpAnimation/SmallBirds2.png"
-                alt="SmallBirds2"
-                class=""
-              />
-            </div>
-            <div
-              class="position-absolute translate-middle"
-              style="top: 18%; left: 36%"
-              data-aos="zoom-out-right"
-              data-aos-delay="750"
-              data-aos-duration="600"
-            >
-              <img
-                src="Photos/PopUpAnimation/SmallBirds3.png"
-                alt="SmallBirds3"
-                class=""
-              />
+
+              <div
+                class="position-absolute translate-middle image-ellipseFloor"
+                style="top: 100%; left: 50%"
+              >
+                <img
+                  src="Photos/PopUpAnimation/Bottom Ellipse.png"
+                  alt="Ellipse Bottom"
+                  class="picFit"
+                />
+              </div>
+              <div
+                data-aos="zoom-out-up"
+                data-aos-delay="350"
+                data-aos-duration="350"
+                class="position-absolute translate-middle image-cormorant"
+                style="top: 45%; left: 50%"
+              >
+                <img
+                  src="Photos/PopUpAnimation/Cormorant.png"
+                  alt="Cormorant"
+                  class="picFit"
+                />
+              </div>
+
+              <div
+                class="position-absolute translate-middle image-pyramids"
+                style="top: 88%; left: 48%"
+              >
+                <img
+                  src="Photos/PopUpAnimation/Pyramids.png"
+                  alt="Pyramids"
+                  class="picFit"
+                />
+              </div>
+              <div
+                class="position-absolute translate-middle sm-bi-1"
+                style="top: 44%; left: 83%"
+              >
+                <img
+                  src="Photos/PopUpAnimation/SmallBirds1.png"
+                  alt="SmallBirds1"
+                  class="picFit"
+                />
+              </div>
+              <div
+                class="position-absolute translate-middle sm-bi-2"
+                style="top: 75%; left: 43%"
+              >
+                <img
+                  src="Photos/PopUpAnimation/SmallBirds2.png"
+                  alt="SmallBirds2"
+                  class="picFit"
+                />
+              </div>
+              <div
+                class="position-absolute translate-middle sm-bi-3"
+                style="top: 12%; left: 24%"
+              >
+                <img
+                  src="Photos/PopUpAnimation/SmallBirds3.png"
+                  alt="SmallBirds3"
+                  class="picFit"
+                />
+              </div>
             </div>
           </div>
         </div>
 
+        <div class="container" id="FindME"></div>
+
         <!-- Header section -->
-        <header class="sticky-xl-top container-fluid p-4">
+        <header
+          class="sticky-xl-top container-fluid p-4 invisible"
+          style="height: fit-content"
+        >
           <div
-            class="container-fluid p-3 my-2 border shadow mb-5 bg-body-tertiary rounded"
+            class="visible container-fluid p-3 my-2 border shadow mb-5 bg-body-tertiary rounded"
             style="background-color: white"
           >
-            <nav class="navbar navbar-expand-xl">
+            <nav class="navbar navbar-expand-xl" id="mainNav">
               <span class="col" .col-xl->Bertram Aakjær</span>
               <ul class="navbar-nav gap-2">
                 <li class="nav-item">
-                  <a class="nav-link active" href="#">HOME</a>
+                  <a class="nav-link" href="#Home">HOME</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#FindME">FIND ME</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">BLOG POSTS</a>
+                  <a class="nav-link" href="">PROJECTS</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">PROJECTS</a>
+                  <a class="nav-link" href="">BLOG POSTS</a>
                 </li>
               </ul>
             </nav>
           </div>
         </header>
-        <div class="container" id="FindME">
+
+        <div class="container">
           <div class="row">
-            <div class="col-sm">
+            <div class="col-sm align-self-center">
               <div class="container">
-                <h1 class="fs-0 fw-bold text-center my-3">Find me !!</h1>
+                <p class="h1 text-center my-4 py-2">
+                  <strong>Find me !!</strong>
+                </p>
                 <p class="text-center text-wrap">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries, but
-                  also the leap into electronic typesetting, remaining
-                  essentially unchanged. It was popularised in the 1960s with
-                  the release of Letraset sheets containing Lorem Ipsum
-                  passages, and more recently with desktop publishing software
-                  like Aldus PageMaker including versions of Lorem Ipsum.
+                  Hey! I’m <strong>Bertram Aakjær</strong>, 17 years old and are
+                  currently studying at Danish high school
+                  <em>“NEXT Sukkertoppen Gymnasium”</em>, I always aspire to
+                  become a better programmer and are always looking for
+                  opportunities to work on new and exciting projects, firstly to
+                  learn, but also to be a part of a team. My focus is currently
+                  on working on smaller projects to get experience and expand my
+                  portfolio. You can follow me or my work on my socials down
+                  below or write to me on the mail:
+                  <strong
+                    ><a href="mailto:work.aakjaer@gmail.com"
+                      >work.aakjaer@gmail.com</a
+                    ></strong
+                  >
                 </p>
               </div>
-              <div class="d-flex justify-content-between container w-25">
-                <a
-                  class=""
-                  href="https://www.facebook.com/people/Balling-Pizzaria/100057518046259/"
-                >
+              <div class="d-flex justify-content-around container w-50">
+                <a href="https://github.com/BertramAakjaer">
                   <img
                     src="Photos/svg/SoMe/github.svg"
                     alt="github"
@@ -167,18 +180,18 @@
                     height="32"
                   />
                 </a>
-                <a class="" href="#">
+                <a href="https://www.linkedin.com/in/bertram-aakj%C3%A6r/">
                   <img
                     src="Photos/svg/SoMe/linkedin.svg"
-                    alt="github"
+                    alt="linkedin"
                     width="32"
                     height="32"
                   />
                 </a>
-                <a class="" href="#">
+                <a href="https://twitter.com/B_r_r_m">
                   <img
                     src="Photos/svg/SoMe/twitter.svg"
-                    alt="github"
+                    alt="twitter"
                     width="32"
                     height="32"
                   />
