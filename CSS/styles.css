@@ -1,5 +1,7 @@
 /* General for the whole document */
 
+@import url("https://fonts.googleapis.com/css2?family=Nova+Square&family=Shrikhand&display=swap");
+
 * {
   box-sizing: border-box;
 
@@ -54,11 +56,31 @@ html {
   width: 14%;
 }
 
-/* Header and breadcrumb css */
+/* Sections */
+.section-white {
+  background-color: rgb(255, 255, 255);
+}
+
+.section-black {
+  background-color: rgb(34, 39, 46);
+}
 
 /* hero stuff for the site */
+.custom-font-nova {
+  font-family: "Nova Square", sans-serif;
+}
+
+.custom-font-shrikhand {
+  font-family: "Shrikhand", serif;
+}
 
 .hero {
   height: 3000px;
   width: 100%;
+}
+
+/* spacers */
+.spacer1 {
+  width: 100%;
+  height: 50px;
 }

@@ -26,187 +26,220 @@
 
   <!-- Body -->
   <body>
-    <div class="container-fluid">
+    <div
+      class="container-fluid"
+      style="
+        padding-right: 0;
+        padding-left: 0;
+        margin-right: auto;
+        margin-left: auto;
+      "
+    >
       <div
         class="hero"
         data-bs-spy="scroll"
         data-bs-target="#mainNav"
         tabindex="0"
       >
-        <!-- Logo pop up section -->
-        <div class="container w-75 min-vh-100" id="Home">
-          <div
-            class="float-start d-flex justify-content-center align-content-center container"
+        <section class="section-white">
+          <!-- Logo pop up section -->
+          <div class="container-fluid w-75 min-vh-100" id="Home">
+            <div
+              class="float-start d-flex justify-content-center align-content-center container"
+            >
+              <div
+                class="position-absolute translate-middle image-ellipseBackground"
+                style="top: 45%; left: 50%"
+              >
+                <img
+                  src="Photos/PopUpAnimation/Background Ellipse.png"
+                  alt="Ellipse"
+                  class="picFit"
+                />
+
+                <div
+                  class="position-absolute translate-middle image-ellipseFloor"
+                  style="top: 100%; left: 50%"
+                >
+                  <img
+                    src="Photos/PopUpAnimation/Bottom Ellipse.png"
+                    alt="Ellipse Bottom"
+                    class="picFit"
+                  />
+                </div>
+
+                <div
+                  class="position-absolute translate-middle image-pyramids"
+                  style="top: 88%; left: 48%"
+                >
+                  <img
+                    src="Photos/PopUpAnimation/Pyramids.png"
+                    alt="Pyramids"
+                    class="picFit"
+                  />
+                </div>
+                <div
+                  class="position-absolute translate-middle sm-bi-1"
+                  style="top: 44%; left: 83%"
+                >
+                  <img
+                    src="Photos/PopUpAnimation/SmallBirds1.png"
+                    alt="SmallBirds1"
+                    class="picFit"
+                  />
+                </div>
+                <div
+                  class="position-absolute translate-middle sm-bi-2"
+                  style="top: 75%; left: 43%"
+                >
+                  <img
+                    src="Photos/PopUpAnimation/SmallBirds2.png"
+                    alt="SmallBirds2"
+                    class="picFit"
+                  />
+                </div>
+                <div
+                  class="position-absolute translate-middle sm-bi-3"
+                  style="top: 12%; left: 24%"
+                >
+                  <img
+                    src="Photos/PopUpAnimation/SmallBirds3.png"
+                    alt="SmallBirds3"
+                    class="picFit"
+                  />
+                </div>
+              </div>
+              <div
+                data-aos="zoom-out-up"
+                data-aos-delay="350"
+                data-aos-duration="350"
+                class="position-absolute translate-middle image-cormorant"
+                style="top: 45%; left: 45%"
+              >
+                <img
+                  src="Photos/PopUpAnimation/Cormorant.png"
+                  alt="Cormorant"
+                  class="picFit"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="container" id="FindME"></div>
+
+          <!-- Header section -->
+          <header
+            class="sticky-xl-top container-fluid p-4 invisible"
+            style="height: fit-content"
           >
             <div
-              class="position-absolute translate-middle image-ellipseBackground"
-              style="top: 45%; left: 50%"
+              class="visible container-fluid p-3 my-2 border shadow mb-5 bg-body-tertiary rounded"
             >
-              <img
-                src="Photos/PopUpAnimation/Background Ellipse.png"
-                alt="Ellipse"
-                class="picFit"
-              />
+              <nav class="navbar navbar-expand-xl" id="mainNav">
+                <span class="col" .col-xl->Bertram Aakjær</span>
+                <ul class="navbar-nav gap-2">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Home">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#FindME">FIND ME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="">PROJECTS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="">BLOG POSTS</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </header>
 
-              <div
-                class="position-absolute translate-middle image-ellipseFloor"
-                style="top: 100%; left: 50%"
-              >
-                <img
-                  src="Photos/PopUpAnimation/Bottom Ellipse.png"
-                  alt="Ellipse Bottom"
-                  class="picFit"
-                />
+          <div class="container">
+            <div class="row">
+              <div class="col-sm align-self-center">
+                <div class="container">
+                  <p class="h1 text-center my-4 py-2 custom-font-shrikhand">
+                    <strong>Find me !!</strong>
+                  </p>
+                  <p class="text-center text-wrap">
+                    Hey! I’m <strong>Bertram Aakjær</strong>, 17 years old and
+                    are currently studying CS at Danish high school
+                    <em>“NEXT Sukkertoppen Gymnasium”</em>, I always aspire to
+                    become a better programmer and are always looking for
+                    opportunities to work on new and exciting projects, firstly
+                    to learn, but also to be a part of a team. My focus is
+                    currently on working on smaller projects to get experience
+                    and expand my portfolio. You can follow me or my work on my
+                    socials down below or write to me on the mail:
+                    <strong
+                      ><a href="mailto:work.aakjaer@gmail.com"
+                        >work.aakjaer@gmail.com</a
+                      ></strong
+                    >
+                  </p>
+                </div>
+                <div class="d-flex justify-content-around container w-50">
+                  <a href="https://github.com/BertramAakjaer">
+                    <img
+                      src="Photos/svg/SoMe/github.svg"
+                      alt="github"
+                      width="32"
+                      height="32"
+                    />
+                  </a>
+                  <a href="https://www.linkedin.com/in/bertram-aakj%C3%A6r/">
+                    <img
+                      src="Photos/svg/SoMe/linkedin.svg"
+                      alt="linkedin"
+                      width="32"
+                      height="32"
+                    />
+                  </a>
+                  <a href="https://twitter.com/B_r_r_m">
+                    <img
+                      src="Photos/svg/SoMe/twitter.svg"
+                      alt="twitter"
+                      width="32"
+                      height="32"
+                    />
+                  </a>
+                </div>
               </div>
-
-              <div
-                class="position-absolute translate-middle image-pyramids"
-                style="top: 88%; left: 48%"
-              >
+              <div class="col-xl">
                 <img
-                  src="Photos/PopUpAnimation/Pyramids.png"
-                  alt="Pyramids"
-                  class="picFit"
-                />
-              </div>
-              <div
-                class="position-absolute translate-middle sm-bi-1"
-                style="top: 44%; left: 83%"
-              >
-                <img
-                  src="Photos/PopUpAnimation/SmallBirds1.png"
-                  alt="SmallBirds1"
-                  class="picFit"
-                />
-              </div>
-              <div
-                class="position-absolute translate-middle sm-bi-2"
-                style="top: 75%; left: 43%"
-              >
-                <img
-                  src="Photos/PopUpAnimation/SmallBirds2.png"
-                  alt="SmallBirds2"
-                  class="picFit"
-                />
-              </div>
-              <div
-                class="position-absolute translate-middle sm-bi-3"
-                style="top: 12%; left: 24%"
-              >
-                <img
-                  src="Photos/PopUpAnimation/SmallBirds3.png"
-                  alt="SmallBirds3"
-                  class="picFit"
+                  src="Photos/aboutME/mePhoto.jpg"
+                  class="img-fluid rounded float-end shadow-lg p-3 mb-5 bg-body-tertiary rounded"
+                  alt="photo"
                 />
               </div>
             </div>
-            <div
-              data-aos="zoom-out-up"
-              data-aos-delay="350"
-              data-aos-duration="350"
-              class="position-absolute translate-middle image-cormorant"
-              style="top: 45%; left: 45%"
+          </div>
+          <div class="spacer1"></div>
+          <div class="separator">
+            <svg
+              class="separator__svg"
+              width="100%"
+              height="400"
+              viewBox="0 0 100 100"
+              preserveAspectRatio="none"
+              fill="#22272e"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <img
-                src="Photos/PopUpAnimation/Cormorant.png"
-                alt="Cormorant"
-                class="picFit"
+              <path
+                d="M 60 60 L 0 100 V 10 Z"
+                fill="#d6d6d6"
+                stroke-width="0"
               />
-            </div>
+              <path d="M 100 100 V 10 L 0 100" />
+            </svg>
           </div>
-        </div>
-
-        <div class="container" id="FindME"></div>
-
-        <!-- Header section -->
-        <header
-          class="sticky-xl-top container-fluid p-4 invisible"
-          style="height: fit-content"
-        >
-          <div
-            class="visible container-fluid p-3 my-2 border shadow mb-5 bg-body-tertiary rounded"
-            style="background-color: white"
-          >
-            <nav class="navbar navbar-expand-xl" id="mainNav">
-              <span class="col" .col-xl->Bertram Aakjær</span>
-              <ul class="navbar-nav gap-2">
-                <li class="nav-item">
-                  <a class="nav-link" href="#Home">HOME</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#FindME">FIND ME</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="">PROJECTS</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="">BLOG POSTS</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </header>
-
-        <div class="container">
-          <div class="row">
-            <div class="col-sm align-self-center">
-              <div class="container">
-                <p class="h1 text-center my-4 py-2">
-                  <strong>Find me !!</strong>
-                </p>
-                <p class="text-center text-wrap">
-                  Hey! I’m <strong>Bertram Aakjær</strong>, 17 years old and are
-                  currently studying at Danish high school
-                  <em>“NEXT Sukkertoppen Gymnasium”</em>, I always aspire to
-                  become a better programmer and are always looking for
-                  opportunities to work on new and exciting projects, firstly to
-                  learn, but also to be a part of a team. My focus is currently
-                  on working on smaller projects to get experience and expand my
-                  portfolio. You can follow me or my work on my socials down
-                  below or write to me on the mail:
-                  <strong
-                    ><a href="mailto:work.aakjaer@gmail.com"
-                      >work.aakjaer@gmail.com</a
-                    ></strong
-                  >
-                </p>
-              </div>
-              <div class="d-flex justify-content-around container w-50">
-                <a href="https://github.com/BertramAakjaer">
-                  <img
-                    src="Photos/svg/SoMe/github.svg"
-                    alt="github"
-                    width="32"
-                    height="32"
-                  />
-                </a>
-                <a href="https://www.linkedin.com/in/bertram-aakj%C3%A6r/">
-                  <img
-                    src="Photos/svg/SoMe/linkedin.svg"
-                    alt="linkedin"
-                    width="32"
-                    height="32"
-                  />
-                </a>
-                <a href="https://twitter.com/B_r_r_m">
-                  <img
-                    src="Photos/svg/SoMe/twitter.svg"
-                    alt="twitter"
-                    width="32"
-                    height="32"
-                  />
-                </a>
-              </div>
-            </div>
-            <div class="col-xl">
-              <img
-                src="Photos/aboutME/mePhoto.jpg"
-                class="img-fluid rounded float-end shadow-lg p-3 mb-5 bg-body-tertiary rounded"
-                alt="photo"
-              />
-            </div>
-          </div>
-        </div>
+          <section
+            class="section-black"
+            style="height: 1000px; width: 100%"
+          ></section>
+        </section>
       </div>
     </div>
 
