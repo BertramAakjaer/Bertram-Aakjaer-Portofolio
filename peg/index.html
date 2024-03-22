@@ -16,14 +16,26 @@
         type="audio/mp3"
       />
     </audio>
-    <audio id="load">
-      <source src="/Sounds/peggingload.mp3" type="audio/mp3" muted="muted" />
+    <audio id="load" autoplay>
+      <source
+        src="https://github.com/BertramAakjaer/Bertram-Aakjaer-Portofolio/raw/main/peg/Sounds/pegging%20load.mp3"
+        type="audio/mp3"
+        muted="muted"
+      />
     </audio>
     <audio id="shoot">
-      <source src="/Sounds/peggle shoot.mp3" type="audio/mpeg" muted="muted" />
+      <source
+        src="https://github.com/BertramAakjaer/Bertram-Aakjaer-Portofolio/raw/main/peg/Sounds/peggle%20shoot.mp3"
+        type="audio/mp3"
+        muted="muted"
+      />
     </audio>
     <audio id="egg">
-      <source src="/Sounds/easteregg.mp3" type="audio/mpeg" muted="muted" />
+      <source
+        src="https://github.com/BertramAakjaer/Bertram-Aakjaer-Portofolio/raw/main/peg/Sounds/easteregg.mp3"
+        type="audio/mp3"
+        muted="muted"
+      />
     </audio>
     <link rel="stylesheet" href="StyleSheet/style.css" />
     <title>Pegging Ultimate Deluxe Mega Ultra HD Edition</title>
@@ -60,12 +72,6 @@
                 rub = [];
               }
               changeColor(this);
-            });
-
-            document.addEventListener("keydown", function (event) {
-              const keyPressed = event.key;
-              if (keyPressed === letter) {
-              }
             });
           });
 
@@ -219,9 +225,6 @@
     <script>
       let wonLevels = 1;
       let roundedScore;
-
-      const load = document.getElementById("load");
-      load.play();
 
       function startGame(mode) {
         document.getElementById("winScreenContent").style.display = "none";
@@ -498,7 +501,8 @@
         player1.connect(pitchShift);
 
         let cooldown;
-        const audioFilePath = "/Sounds/bluepeg.mp3";
+        const audioFilePath =
+          "https://github.com/BertramAakjaer/Bertram-Aakjaer-Portofolio/raw/main/peg/Sounds/bluepeg.mp3";
         Tone.loaded().then(() => {
           player1.load(audioFilePath);
         });
@@ -537,7 +541,8 @@
 
         player2.connect(pitchShift2);
 
-        const audioFilePath2 = "/Sounds/orangepeg.mp3";
+        const audioFilePath2 =
+          "https://github.com/BertramAakjaer/Bertram-Aakjaer-Portofolio/raw/main/peg/Sounds/orangepeg.mp3";
         Tone.loaded().then(() => {
           player2.load(audioFilePath2);
         });
@@ -1233,7 +1238,8 @@
         player1.connect(pitchShift);
 
         let cooldown;
-        const audioFilePath = "/Sounds/bluepeg.mp3";
+        const audioFilePath =
+          "https://github.com/BertramAakjaer/Bertram-Aakjaer-Portofolio/raw/main/peg/Sounds/bluepeg.mp3";
         Tone.loaded().then(() => {
           player1.load(audioFilePath);
         });
@@ -1280,7 +1286,8 @@
 
         player2.connect(pitchShift2);
 
-        const audioFilePath2 = "/Sounds/orangepeg.mp3";
+        const audioFilePath2 =
+          "https://github.com/BertramAakjaer/Bertram-Aakjaer-Portofolio/raw/main/peg/Sounds/orangepeg.mp3";
         Tone.loaded().then(() => {
           player2.load(audioFilePath2);
         });
@@ -1947,7 +1954,8 @@
         player1.connect(pitchShift);
 
         let cooldown;
-        const audioFilePath = "/Sounds/bluepeg.mp3";
+        const audioFilePath =
+          "https://github.com/BertramAakjaer/Bertram-Aakjaer-Portofolio/raw/main/peg/Sounds/bluepeg.mp3";
         Tone.loaded().then(() => {
           player1.load(audioFilePath);
         });
@@ -1986,7 +1994,8 @@
 
         player2.connect(pitchShift2);
 
-        const audioFilePath2 = "/Sounds/orangepeg.mp3";
+        const audioFilePath2 =
+          "https://github.com/BertramAakjaer/Bertram-Aakjaer-Portofolio/raw/main/peg/Sounds/orangepeg.mp3";
         Tone.loaded().then(() => {
           player2.load(audioFilePath2);
         });
