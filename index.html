@@ -136,7 +136,7 @@
               class="visible container-fluid p-3 my-2 border shadow mb-5 bg-body-tertiary rounded"
             >
               <nav class="navbar navbar-expand-xl" id="mainNav">
-                <span class="col" .col-xl->Bertram Aakjær</span>
+                <span class="col nameFont fs-5" .col-xl->Bertram Aakjær</span>
                 <ul class="navbar-nav gap-2">
                   <li class="nav-item">
                     <a class="nav-link" href="#Home">HOME</a>
@@ -145,10 +145,10 @@
                     <a class="nav-link" href="#FindME">FIND ME</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="">PROJECTS</a>
+                    <a class="nav-link" href="#Projects">PROJECTS</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="">BLOG POSTS</a>
+                    <a class="nav-link" href="">PLACEHOLDER</a>
                   </li>
                 </ul>
               </nav>
@@ -186,6 +186,7 @@
                       alt="github"
                       width="32"
                       height="32"
+                      class="imgEnlageHover"
                     />
                   </a>
                   <a href="https://www.linkedin.com/in/bertram-aakj%C3%A6r/">
@@ -194,6 +195,7 @@
                       alt="linkedin"
                       width="32"
                       height="32"
+                      class="imgEnlageHover"
                     />
                   </a>
                   <a href="https://twitter.com/BertramAakjaer">
@@ -202,6 +204,7 @@
                       alt="twitter"
                       width="32"
                       height="32"
+                      class="imgEnlageHover"
                     />
                   </a>
                 </div>
@@ -235,10 +238,108 @@
               <path d="M 100 100 V 10 L 0 100" />
             </svg>
           </div>
-          <section
-            class="section-black"
-            style="height: 1000px; width: 100%"
-          ></section>
+          <div class="container" id="Projects"></div>
+          <section class="section-black" style="height: 1000px; width: 100%">
+            <div
+              id="carouselExampleIndicators"
+              class="carousel slide"
+              data-bs-ride="true"
+              style="padding-top: 160px"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div
+                class="carousel-inner"
+                style="padding-bottom: 60px; padding-top: 20px"
+              >
+                <div class="carousel-item active">
+                  <div class="container-fluid">
+                    <a
+                      href="https://github.com/BertramAakjaer/duplicate-remover"
+                    >
+                      <img
+                        src="https://ghc.clait.sh/repo/BertramAakjaer/duplicate-remover?bg_color=22272e&title_color=3d44ff&text_color=ffffff&icon_color=d6d6d6&show_user=true"
+                        alt="GitHub Repo Card"
+                        style="width: 65vw; left: 16%; position: relative"
+                        class="imgEnlageHover2"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="container-fluid">
+                    <a href="https://github.com/BertramAakjaer/Treeconomy">
+                      <img
+                        src="https://ghc.clait.sh/repo/BertramAakjaer/Treeconomy?bg_color=22272e&title_color=3d44ff&text_color=ffffff&icon_color=d6d6d6&show_user=true"
+                        alt="GitHub Repo Card"
+                        style="width: 65vw; left: 16%; position: relative"
+                        class="imgEnlageHover2"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="container-fluid">
+                    <a
+                      href="https://github.com/BertramAakjaer/rust-string-search"
+                    >
+                      <img
+                        src="https://ghc.clait.sh/repo/BertramAakjaer/rust-string-search?bg_color=22272e&title_color=3d44ff&text_color=ffffff&icon_color=d6d6d6&show_user=true"
+                        alt="GitHub Repo Card"
+                        style="width: 65vw; left: 16%; position: relative"
+                        class="imgEnlageHover2"
+                      />
+                    </a>
+                  </div>
+                  <!-- https://ghc.clait.sh/ -->
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </section>
         </section>
       </div>
     </div>

@@ -1,6 +1,7 @@
 /* General for the whole document */
 
 @import url("https://fonts.googleapis.com/css2?family=Nova+Square&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap");
 
 * {
   box-sizing: border-box;
@@ -17,6 +18,10 @@ html {
   margin: 0;
   padding: 0;
   overflow: visible;
+}
+
+.nameFont {
+  font-family: "Holtwood One SC", serif;
 }
 
 /* Animation pop up */
@@ -83,4 +88,23 @@ html {
 .spacer1 {
   width: 100%;
   height: 50px;
+}
+
+/* Hover img */
+.imgEnlageHover:hover {
+  transform: scale(1.2); /* Enlarge by 20% */
+}
+
+.imgEnlageHover {
+  transition: all 1s; /* Add a smooth transition effect */
+  transform-origin: 50% 50%; /* Set the origin point for the transform */
+}
+
+.imgEnlageHover2:hover {
+  transform: scale(1.05); /* Enlarge by 20% */
+}
+
+.imgEnlageHover2 {
+  transition: all 1s; /* Add a smooth transition effect */
+  transform-origin: 50% 50%; /* Set the origin point for the transform */
 }
