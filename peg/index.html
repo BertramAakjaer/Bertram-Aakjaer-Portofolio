@@ -16,7 +16,7 @@
         type="audio/mp3"
       />
     </audio>
-    <audio id="load" autoplay>
+    <audio id="load">
       <source
         src="https://github.com/BertramAakjaer/Bertram-Aakjaer-Portofolio/raw/main/peg/Sounds/pegging%20load.mp3"
         type="audio/mp3"
@@ -225,6 +225,9 @@
     <script>
       let wonLevels = 1;
       let roundedScore;
+
+      const load = document.getElementById("load");
+      load.play();
 
       function startGame(mode) {
         document.getElementById("winScreenContent").style.display = "none";
@@ -540,8 +543,7 @@
 
         player2.connect(pitchShift2);
 
-        const audioFilePath2 =
-          "https://github.com/BertramAakjaer/Bertram-Aakjaer-Portofolio/raw/main/peg/Sounds/orangepeg.mp3";
+        const audioFilePath2 = "orangepeg.mp3";
         Tone.loaded().then(() => {
           player2.load(audioFilePath2);
         });
@@ -1284,8 +1286,7 @@
 
         player2.connect(pitchShift2);
 
-        const audioFilePath2 =
-          "https://github.com/BertramAakjaer/Bertram-Aakjaer-Portofolio/raw/main/peg/Sounds/orangepeg.mp3";
+        const audioFilePath2 = "orangepeg.mp3";
         Tone.loaded().then(() => {
           player2.load(audioFilePath2);
         });
@@ -1991,8 +1992,7 @@
 
         player2.connect(pitchShift2);
 
-        const audioFilePath2 =
-          "https://github.com/BertramAakjaer/Bertram-Aakjaer-Portofolio/raw/main/peg/Sounds/orangepeg.mp3";
+        const audioFilePath2 = "orangepeg.mp3";
         Tone.loaded().then(() => {
           player2.load(audioFilePath2);
         });
