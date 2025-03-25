@@ -19,7 +19,7 @@ html {
   margin: 0;
   padding: 0;
   overflow: visible;
-  position: relative;
+  position: static;
 }
 
 .nameFont {
