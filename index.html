@@ -5,7 +5,7 @@
   <!-- Metadata -->
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- linking stylesheet from the folder -->
     <link
@@ -133,24 +133,51 @@
             style="height: fit-content"
           >
             <div
-              class="visible container-fluid p-3 my-2 border shadow mb-5 bg-body-tertiary rounded"
+              class="visible container-fluid p-3 my-2 shadow mb-5 rounded"
+              style="background-color: rgba(255, 255, 255, 0.91)"
             >
               <nav class="navbar navbar-expand-xl" id="mainNav">
-                <span class="col nameFont fs-5" .col-xl->Bertram Aakjær</span>
-                <ul class="navbar-nav gap-2">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#Home">HOME</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#FindME">FIND ME</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#Projects">PROJECTS</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="">PLACEHOLDER</a>
-                  </li>
-                </ul>
+                <div class="container-fluid">
+                  <span class="col nameFont fs-5" .col-xl->Bertram Aakjær</span>
+                  <ul class="navbar-nav gap-2">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#Home">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#FindME">FIND ME</a>
+                    </li>
+                    <div class="vr"></div>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        PROJECTS
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Another action</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Something else here</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <div class="vr"></div>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#Toolbox">TOOLBOX</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#Projects">SHOWCASE</a>
+                    </li>
+                  </ul>
+                </div>
               </nav>
             </div>
           </header>
@@ -160,10 +187,10 @@
               <div class="col-sm align-self-center">
                 <div class="container">
                   <p class="h1 text-center my-4 py-2 custom-font-shrikhand">
-                    <strong>Find me !!</strong>
+                    <strong class="custom-font-shrikhand">Find me !!</strong>
                   </p>
                   <p class="text-center text-wrap">
-                    Hey! I`m <strong>Bertram Aakjær</strong>, 17 years old and
+                    Hey! I`m <strong>Bertram Aakjær</strong>, 18 years old and
                     are currently studying CS at Danish high school
                     <em>“NEXT Sukkertoppen Gymnasium”</em>, I always aspire to
                     become a better programmer and are always looking for
@@ -179,6 +206,7 @@
                     >
                   </p>
                 </div>
+                <div class="container" id="Toolbox"></div>
                 <div class="d-flex justify-content-around container w-50">
                   <a href="https://github.com/BertramAakjaer">
                     <img
@@ -198,6 +226,15 @@
                       class="imgEnlageHover"
                     />
                   </a>
+                  <a href="https://b-r-r-m.itch.io/">
+                    <img
+                      src="media/svg/SoMe/itch_io.svg"
+                      alt="twitter"
+                      width="32"
+                      height="32"
+                      class="imgEnlageHover"
+                    />
+                  </a>
                   <a href="https://twitter.com/BertramAakjaer">
                     <img
                       src="media/svg/SoMe/twitter.svg"
@@ -211,14 +248,193 @@
               </div>
               <div class="col-xl">
                 <img
-                  src="media/aboutMe/mePhoto.jpg"
+                  src="media/aboutMe/mePhoto.webp"
                   class="img-fluid rounded float-end shadow-lg p-3 mb-5 bg-body-tertiary rounded"
                   alt="photo"
                 />
               </div>
             </div>
           </div>
+
           <div class="spacer1"></div>
+          <p class="h2 text-center text-wrap my-4 py-2 custom-font-shrikhand">
+            <i><strong>Experince from jobs, education and more..</strong></i>
+          </p>
+
+          <div class="container">
+            <div class="infinite-scroll-container p-4">
+              <div class="scrolling-logos">
+                <a href="https://mosedeskolen.aula.dk/">
+                  <img
+                    src="media/experince/mosedeskolen.webp"
+                    class="img-fluid rounded float-end rounded imgEnlageHover"
+                    alt="Logo 1"
+                  />
+                </a>
+                <a href="https://erhvervsstyrelsen.dk/">
+                  <img
+                    src="media/experince/erhvervsstyrelsen.webp"
+                    class="img-fluid rounded float-end rounded imgEnlageHover"
+                    alt="Logo 1"
+                  />
+                </a>
+                <a
+                  href="https://www.nextkbh.dk/gymnasier/sukkertoppen-gymnasium/"
+                >
+                  <img
+                    src="media/experince/nextkbh.webp"
+                    class="img-fluid rounded float-end rounded imgEnlageHover"
+                    alt="Logo 1"
+                  />
+                </a>
+                <a href="https://sunsetjob.dk/">
+                  <img
+                    src="media/experince/sunset.webp"
+                    class="img-fluid rounded float-end rounded expEnlageHover"
+                    alt="Logo 1"
+                  />
+                </a>
+
+                <!-- Duplicates -->
+                <a href="https://mosedeskolen.aula.dk/">
+                  <img
+                    src="media/experince/mosedeskolen.webp"
+                    class="img-fluid rounded float-end rounded imgEnlageHover"
+                    alt="Logo 1"
+                  />
+                </a>
+                <a href="https://erhvervsstyrelsen.dk/">
+                  <img
+                    src="media/experince/erhvervsstyrelsen.webp"
+                    class="img-fluid rounded float-end rounded imgEnlageHover"
+                    alt="Logo 1"
+                  />
+                </a>
+                <a
+                  href="https://www.nextkbh.dk/gymnasier/sukkertoppen-gymnasium/"
+                >
+                  <img
+                    src="media/experince/nextkbh.webp"
+                    class="img-fluid rounded float-end rounded imgEnlageHover"
+                    alt="Logo 1"
+                  />
+                </a>
+                <a href="https://sunsetjob.dk/">
+                  <img
+                    src="media/experince/sunset.webp"
+                    class="img-fluid rounded float-end rounded expEnlageHover"
+                    alt="Logo 1"
+                  />
+                </a>
+                <a href="https://mosedeskolen.aula.dk/">
+                  <img
+                    src="media/experince/mosedeskolen.webp"
+                    class="img-fluid rounded float-end rounded imgEnlageHover"
+                    alt="Logo 1"
+                  />
+                </a>
+                <a href="https://erhvervsstyrelsen.dk/">
+                  <img
+                    src="media/experince/erhvervsstyrelsen.webp"
+                    class="img-fluid rounded float-end rounded imgEnlageHover"
+                    alt="Logo 1"
+                  />
+                </a>
+                <a
+                  href="https://www.nextkbh.dk/gymnasier/sukkertoppen-gymnasium/"
+                >
+                  <img
+                    src="media/experince/nextkbh.webp"
+                    class="img-fluid rounded float-end rounded imgEnlageHover"
+                    alt="Logo 1"
+                  />
+                </a>
+                <a href="https://sunsetjob.dk/">
+                  <img
+                    src="media/experince/sunset.webp"
+                    class="img-fluid rounded float-end rounded expEnlageHover"
+                    alt="Logo 1"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="spacer1"></div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-sm">
+                <div class="container">
+                  <p class="h1 text-center my-4 py-2 custom-font-shrikhand">
+                    <strong class="custom-font-shrikhand">Toolbox</strong>
+                  </p>
+                  <p class="text-center text-wrap">
+                    I have experience with a variety of programming languages
+                    and tools, but my main focus is on quick fun program
+                    development with python and low-level programming in Rust. I
+                    have experience with the following languages and tools:
+                  </p>
+                </div>
+              </div>
+              <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="..." class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">
+                        This is a longer card with supporting text below as a
+                        natural lead-in to additional content. This content is a
+                        little bit longer.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="..." class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a short card.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img
+                      src="media/aboutMe/mePhoto.webp"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">
+                        This is a longer card with supporting text below as a
+                        natural lead-in to additional content.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="..." class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">
+                        This is a longer card with supporting text below as a
+                        natural lead-in to additional content. This content is a
+                        little bit longer.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="spacer1"></div>
+
           <div class="separator">
             <svg
               class="separator__svg"

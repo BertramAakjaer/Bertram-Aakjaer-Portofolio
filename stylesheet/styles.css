@@ -2,10 +2,11 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Nova+Square&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   box-sizing: border-box;
-
+  font-family: Arial, sans-serif;
   /* border: 1px red dotted; */
 }
 
@@ -107,4 +108,42 @@ html {
 .imgEnlageHover2 {
   transition: all 1s; /* Add a smooth transition effect */
   transform-origin: 50% 50%; /* Set the origin point for the transform */
+}
+
+/* Hover experince */
+.expEnlageHover:hover {
+  transform: scale(1.2); /* Enlarge by 20% */
+}
+
+.expEnlageHover {
+  transition: all 1s; /* Add a smooth transition effect */
+  transform-origin: 50% 50%; /* Set the origin point for the transform */
+}
+
+/* Infinite scroll */
+
+.infinite-scroll-container {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  width: 100%;
+}
+
+.scrolling-logos {
+  display: inline-flex;
+  animation: scroll 60s linear infinite;
+}
+
+.scrolling-logos img {
+  height: 150px;
+  margin-inline: 120px;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-30%);
+  }
 }
