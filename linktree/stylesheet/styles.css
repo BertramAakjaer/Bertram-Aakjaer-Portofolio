@@ -1,0 +1,157 @@
+/* General for the whole document */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+
+  /* border: 1px red dotted; */
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body,
+html {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+  background-color: #0e162e;
+}
+
+body {
+  background: radial-gradient(circle, #ffffff 0%, #616161 120%);
+  min-height: 100vh;
+  padding: 40px 0;
+  font-family: "Roboto", "Arial", sans-serif;
+}
+
+.container {
+  max-width: 680px;
+  flex: 1;
+}
+
+.profile-container {
+  margin-bottom: 30px;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  }
+}
+
+.bio {
+  color: black;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+h2 {
+  color: black;
+  font-weight: 600;
+}
+
+.links-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.link-item {
+  width: 80%;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #ffffff, #e0e0e0);
+  padding: 15px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid transparent; /* Transparent border for gradient effect */
+  border-radius: 10px; /* Ensures roundness */
+  background-clip: padding-box; /* Ensures the gradient doesn't affect padding */
+  position: relative; /* Required for pseudo-element positioning */
+}
+
+.link-item::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: 10px; /* Matches the button's roundness */
+  background: linear-gradient(135deg, #d3d3d3, #a9a9a9); /* Gradient border */
+  z-index: -1; /* Places the gradient behind the button */
+}
+
+.link-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 0)
+  );
+  transition: all 0.3s ease;
+}
+
+.link-item:hover::before {
+  left: 100%;
+}
+
+.link-item:hover {
+  transform: translateY(-3px);
+  background: linear-gradient(135deg, #b0b0b0, #d0d0d0); /* Darker gradient */
+  box-shadow: 0 8px 16px rgba(176, 176, 176, 0.3),
+    0 0 15px rgba(176, 176, 176, 0.6);
+  color: white; /* Keeps the text white */
+}
+
+.link-item:hover i {
+  transform: rotate(20deg);
+  color: white; /* Makes the SVG icon white */
+}
+
+.link-item i {
+  margin-right: 10px;
+  color: black;
+  transition: transform 0.3s ease;
+}
+
+.footer {
+  margin-top: auto;
+  font-size: 0.9rem;
+  color: black;
+  text-align: center;
+}
